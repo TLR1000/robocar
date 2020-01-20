@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-01-20T12:52:26.600Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="XsKXeKbB-PvgjMtHzTb2" version="12.5.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-01-20T12:57:17.931Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="nfs6cYfYhvkAuYHuxrxh" version="12.5.5" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Self_Control">
     <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -224,6 +224,32 @@
         </mxCell>
         <mxCell id="LWlSdSai6YPcA7TRR0r2-26" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;digitalWrite(pinRB,HIGH);&amp;nbsp; //making motor move towards right rear&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;digitalWrite(pinRF,LOW);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;digitalWrite(pinLB,HIGH);&amp;nbsp; //making motor move towards left rear&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;digitalWrite(pinLF,LOW);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Car_state = 2;&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="TrLwvyBXtbngQO7aNah2-1" vertex="1">
           <mxGeometry x="170" y="1020" width="420" height="80" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LxlTmatayJX95u-TtrSM" name="Page-3">
+    <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="beUgp5TPmeKoyX8-LYg0-0"/>
+        <mxCell id="beUgp5TPmeKoyX8-LYg0-1" parent="beUgp5TPmeKoyX8-LYg0-0"/>
+        <mxCell id="swfFsxFPmf1t-wbneZTd-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beUgp5TPmeKoyX8-LYg0-1" source="LXVzGVwt3CdWZP2nUlH6-0" target="swfFsxFPmf1t-wbneZTd-1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="LXVzGVwt3CdWZP2nUlH6-0" value="begin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+          <mxGeometry x="320" y="80" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="swfFsxFPmf1t-wbneZTd-0" value="Ultrasonic_Ranging(unsigned char Mode)&lt;br&gt;//function of ultrasonic distance detecting ，MODE=1，displaying，no displaying under other situation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+          <mxGeometry x="50" y="40" width="720" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="swfFsxFPmf1t-wbneZTd-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beUgp5TPmeKoyX8-LYg0-1" source="swfFsxFPmf1t-wbneZTd-1" target="swfFsxFPmf1t-wbneZTd-3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="swfFsxFPmf1t-wbneZTd-1" value="&lt;div&gt;&amp;nbsp; int old_distance;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, LOW);&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; delayMicroseconds(2);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, HIGH);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; delayMicroseconds(10);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, LOW);&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; int distance = pulseIn(inputPin, HIGH);&amp;nbsp; // reading the duration of high level&lt;/div&gt;&lt;div&gt;&amp;nbsp; distance= distance/58;&amp;nbsp; &amp;nbsp;// Transform pulse time to distance&amp;nbsp; &amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+          <mxGeometry x="170" y="130" width="420" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="swfFsxFPmf1t-wbneZTd-3" value="Mode==1" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+          <mxGeometry x="340" y="290" width="80" height="80" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
