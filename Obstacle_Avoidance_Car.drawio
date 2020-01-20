@@ -1,4 +1,87 @@
-<mxfile host="www.draw.io" modified="2020-01-20T13:07:01.472Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="S7vWta42jwDQME4qto5g" version="12.5.5" type="github" pages="3">
+<mxfile host="www.draw.io" modified="2020-01-20T13:21:12.805Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="1trvoO2zsG_gTS08xysw" version="12.5.5" type="github" pages="5">
+  <diagram id="_vzvbNv-li9IqQeby7kl" name="Main">
+    <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="qLeFHLmynjRaj85It-eU-0"/>
+        <mxCell id="qLeFHLmynjRaj85It-eU-1" parent="qLeFHLmynjRaj85It-eU-0"/>
+        <mxCell id="qLeFHLmynjRaj85It-eU-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" source="qLeFHLmynjRaj85It-eU-2" target="qLeFHLmynjRaj85It-eU-5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-2" value="&lt;div&gt;int inputPin=A0;&amp;nbsp; // ultrasonic module&amp;nbsp; &amp;nbsp;ECHO to A0&lt;/div&gt;&lt;div&gt;int outputPin=A1;&amp;nbsp; // ultrasonic module&amp;nbsp; TRIG to A1&lt;/div&gt;&lt;div&gt;#define Lpwm_pin&amp;nbsp; 5&amp;nbsp; &amp;nbsp; &amp;nbsp;//pin of controlling speed---- ENA of motor driver board&lt;/div&gt;&lt;div&gt;#define Rpwm_pin&amp;nbsp; 10&amp;nbsp; &amp;nbsp; //pin of controlling speed---- ENB of motor driver board&lt;/div&gt;&lt;div&gt;int pinLB=2;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;//pin of controlling turning---- IN1 of motor driver board&lt;/div&gt;&lt;div&gt;int pinLF=4;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;//pin of controlling turning---- IN2 of motor driver board&lt;/div&gt;&lt;div&gt;int pinRB=7;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //pin of controlling turning---- IN3 of motor driver board&lt;/div&gt;&lt;div&gt;int pinRF=8;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //pin of controlling turning---- IN4 of motor driver board&lt;/div&gt;&lt;div&gt;unsigned char Lpwm_val = 200; //initialized left wheel speed at 250&lt;/div&gt;&lt;div&gt;unsigned char Rpwm_val = 200; //initialized right wheel speed at 250&lt;/div&gt;&lt;div&gt;int Car_state=0;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;//the working state of car&lt;/div&gt;&lt;div&gt;int servopin=3;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //defining digital port pin 3, connecting to signal line of servo motor&lt;/div&gt;&lt;div&gt;int myangle;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //defining variable of angle&lt;/div&gt;&lt;div&gt;int pulsewidth;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //defining variable of pulse width&lt;/div&gt;&lt;div&gt;unsigned char DuoJiao=60;&amp;nbsp; &amp;nbsp; //initialized angle of motor at 60°&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="160" y="120" width="460" height="230" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" source="qLeFHLmynjRaj85It-eU-3" target="qLeFHLmynjRaj85It-eU-2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-3" value="begin" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="70" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" source="qLeFHLmynjRaj85It-eU-5" target="qLeFHLmynjRaj85It-eU-7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-5" value="setup();" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="380" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-7" value="loop();" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="470" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" source="qLeFHLmynjRaj85It-eU-10" target="qLeFHLmynjRaj85It-eU-13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-10" value="&lt;div&gt;&amp;nbsp; &amp;nbsp;pinMode(servopin,OUTPUT);&amp;nbsp; //setting motor interface as output&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;M_Control_IO_config();&amp;nbsp; &amp;nbsp; &amp;nbsp;//motor controlling the initialization of IO&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;Set_Speed(Lpwm_val,Rpwm_val);&amp;nbsp; //setting initialized speed&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;Set_servopulse(DuoJiao);&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;//setting initialized motor angle&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;pinMode(inputPin, INPUT);&amp;nbsp; &amp;nbsp; &amp;nbsp; //starting receiving IR remote control signal&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;pinMode(outputPin, OUTPUT);&amp;nbsp; &amp;nbsp; //IO of ultrasonic module&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;Serial.begin(9600);&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //initialized serial port , using Bluetooth as serial port, setting baud&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;stopp();&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;//stop&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="135" y="670" width="510" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" source="qLeFHLmynjRaj85It-eU-11" target="qLeFHLmynjRaj85It-eU-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="670"/>
+              <mxPoint x="390" y="670"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-11" value="begin" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="610" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-13" value="end" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="840" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-15" value="&lt;b&gt;setup();&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="135" y="590" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" target="qLeFHLmynjRaj85It-eU-17" source="qLeFHLmynjRaj85It-eU-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="520" as="sourcePoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-17" value="end" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="550" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" source="qLeFHLmynjRaj85It-eU-19" target="qLeFHLmynjRaj85It-eU-22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-19" value="&lt;div&gt;Self_Control();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="990" width="120" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="qLeFHLmynjRaj85It-eU-1" source="qLeFHLmynjRaj85It-eU-21" target="qLeFHLmynjRaj85It-eU-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="990"/>
+              <mxPoint x="390" y="990"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-21" value="begin" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="930" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-22" value="end" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="330" y="1051" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="qLeFHLmynjRaj85It-eU-23" value="&lt;b&gt;loop();&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="qLeFHLmynjRaj85It-eU-1">
+          <mxGeometry x="135" y="910" width="40" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Self_Control">
     <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -228,7 +311,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="LxlTmatayJX95u-TtrSM" name="Page-3">
+  <diagram id="LxlTmatayJX95u-TtrSM" name="sensors">
     <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="beUgp5TPmeKoyX8-LYg0-0"/>
@@ -376,6 +459,70 @@
         </mxCell>
         <mxCell id="T9kN86jR3b1ZxTUexzNa-25" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
           <mxGeometry x="430" y="2160" width="120" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="G_P_eS29h7OPjWBlERHS" name="controls">
+    <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="eO9CP8GYeZcwPHQrlavQ-0"/>
+        <mxCell id="eO9CP8GYeZcwPHQrlavQ-1" parent="eO9CP8GYeZcwPHQrlavQ-0"/>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="eO9CP8GYeZcwPHQrlavQ-1" source="pIxW7CxdCtVZP4g3NeIT-1" target="pIxW7CxdCtVZP4g3NeIT-3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-1" value="begin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="365" y="80" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-2" value="&lt;b&gt;servopulse(int servopin,int myangle) &lt;/b&gt;//defining a function of pulse" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="50" y="40" width="720" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="eO9CP8GYeZcwPHQrlavQ-1" source="pIxW7CxdCtVZP4g3NeIT-3" target="pIxW7CxdCtVZP4g3NeIT-5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-3" value="&lt;div&gt;pulsewidth=(myangle*11)+500; //converting angle into pulse width value at 500-2480&amp;nbsp;&lt;/div&gt;&lt;div&gt;digitalWrite(servopin,HIGH); //increasing the level of motor interface to upmost&lt;/div&gt;&lt;div&gt;delayMicroseconds(pulsewidth); //delaying microsecond of pulse width value&lt;/div&gt;&lt;div&gt;digitalWrite(servopin,LOW); //decreasing the level of motor interface to the least&lt;/div&gt;&lt;div&gt;delay(20-pulsewidth/1000);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="170" y="130" width="510" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-5" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="365" y="240" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="eO9CP8GYeZcwPHQrlavQ-1" source="pIxW7CxdCtVZP4g3NeIT-9" target="pIxW7CxdCtVZP4g3NeIT-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="400" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-9" value="begin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="365" y="330" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-10" value="&lt;b&gt;Set_servopulse(int set_val)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="50" y="310" width="720" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="eO9CP8GYeZcwPHQrlavQ-1" target="pIxW7CxdCtVZP4g3NeIT-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="480" as="sourcePoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-13" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="365" y="530" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="eO9CP8GYeZcwPHQrlavQ-1" source="pIxW7CxdCtVZP4g3NeIT-14" target="pIxW7CxdCtVZP4g3NeIT-17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-14" value="int i=0;i&amp;lt;=10;i++" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="385" y="400" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="eO9CP8GYeZcwPHQrlavQ-1" source="pIxW7CxdCtVZP4g3NeIT-17" target="pIxW7CxdCtVZP4g3NeIT-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="540"/>
+              <mxPoint x="720" y="540"/>
+              <mxPoint x="720" y="380"/>
+              <mxPoint x="425" y="380"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pIxW7CxdCtVZP4g3NeIT-17" value="servopulse(servopin,set_val); //invokimg pulse function" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="eO9CP8GYeZcwPHQrlavQ-1">
+          <mxGeometry x="520" y="460" width="180" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
