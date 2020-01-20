@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-01-20T13:05:54.384Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="t41inm3RJGyZAClnlVZ7" version="12.5.5" type="github" pages="3">
+<mxfile host="www.draw.io" modified="2020-01-20T13:07:01.472Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="S7vWta42jwDQME4qto5g" version="12.5.5" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Self_Control">
     <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -335,19 +335,19 @@
         <mxCell id="T9kN86jR3b1ZxTUexzNa-14" value="begin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
           <mxGeometry x="310" y="1760" width="120" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="T9kN86jR3b1ZxTUexzNa-15" value="&lt;b&gt;Ultrasonic_Ranging&lt;/b&gt;(unsigned char Mode)&lt;br&gt;//function of ultrasonic distance detecting ，MODE=1，displaying，no displaying under other situation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+        <mxCell id="T9kN86jR3b1ZxTUexzNa-15" value="&lt;b&gt;ask_pin_R(unsigned char Mode)&amp;nbsp; &amp;nbsp;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
           <mxGeometry x="40" y="1720" width="720" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="T9kN86jR3b1ZxTUexzNa-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beUgp5TPmeKoyX8-LYg0-1" source="T9kN86jR3b1ZxTUexzNa-17" target="T9kN86jR3b1ZxTUexzNa-19">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="T9kN86jR3b1ZxTUexzNa-17" value="&lt;div&gt;&amp;nbsp; int old_distance;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, LOW);&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; delayMicroseconds(2);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, HIGH);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; delayMicroseconds(10);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, LOW);&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; int distance = pulseIn(inputPin, HIGH);&amp;nbsp; // reading the duration of high level&lt;/div&gt;&lt;div&gt;&amp;nbsp; distance= distance/58;&amp;nbsp; &amp;nbsp;// Transform pulse time to distance&amp;nbsp; &amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+        <mxCell id="T9kN86jR3b1ZxTUexzNa-17" value="&lt;div&gt;&amp;nbsp; int old_Rdistance;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, LOW);&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; delayMicroseconds(2);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, HIGH); //&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; delayMicroseconds(10);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; digitalWrite(outputPin, LOW);&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; int Rdistance = pulseIn(inputPin, HIGH);&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; Rdistance= Rdistance/58;&amp;nbsp; &amp;nbsp;// Transform pulse time to distance&amp;nbsp; &amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
           <mxGeometry x="160" y="1810" width="420" height="130" as="geometry"/>
         </mxCell>
         <mxCell id="T9kN86jR3b1ZxTUexzNa-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beUgp5TPmeKoyX8-LYg0-1" source="T9kN86jR3b1ZxTUexzNa-19" target="T9kN86jR3b1ZxTUexzNa-24">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="T9kN86jR3b1ZxTUexzNa-19" value="Mode==1" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+        <mxCell id="T9kN86jR3b1ZxTUexzNa-19" value="Mode==3" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
           <mxGeometry x="330" y="1970" width="80" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="T9kN86jR3b1ZxTUexzNa-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beUgp5TPmeKoyX8-LYg0-1" source="T9kN86jR3b1ZxTUexzNa-21" target="T9kN86jR3b1ZxTUexzNa-25">
@@ -359,7 +359,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="T9kN86jR3b1ZxTUexzNa-21" value="&lt;div&gt;Serial.print(&quot;\n H = &quot;);&lt;/div&gt;&lt;div&gt;Serial.print(distance,DEC);&amp;nbsp;&lt;/div&gt;&lt;div&gt;return distance;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+        <mxCell id="T9kN86jR3b1ZxTUexzNa-21" value="&lt;div&gt;Serial.print(&quot;\n R = &quot;);&lt;/div&gt;&lt;div&gt;Serial.print(distance,DEC);&amp;nbsp;&lt;/div&gt;&lt;div&gt;return Rdistance;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
           <mxGeometry x="292.5" y="2070" width="155" height="50" as="geometry"/>
         </mxCell>
         <mxCell id="T9kN86jR3b1ZxTUexzNa-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beUgp5TPmeKoyX8-LYg0-1" source="T9kN86jR3b1ZxTUexzNa-19" target="T9kN86jR3b1ZxTUexzNa-21">
@@ -371,7 +371,7 @@
         <mxCell id="T9kN86jR3b1ZxTUexzNa-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="beUgp5TPmeKoyX8-LYg0-1" source="T9kN86jR3b1ZxTUexzNa-24" target="T9kN86jR3b1ZxTUexzNa-25">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="T9kN86jR3b1ZxTUexzNa-24" value="&lt;div&gt;&lt;span&gt;return distance;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
+        <mxCell id="T9kN86jR3b1ZxTUexzNa-24" value="&lt;div&gt;&lt;span&gt;return Rdistance;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
           <mxGeometry x="510" y="2070" width="190" height="50" as="geometry"/>
         </mxCell>
         <mxCell id="T9kN86jR3b1ZxTUexzNa-25" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="beUgp5TPmeKoyX8-LYg0-1">
